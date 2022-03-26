@@ -13,10 +13,10 @@
                         <div id="accordion-element-01"
                              class="panel-collapse collapse in">
                             <div class="panel-body">
-                                <a href="SearchProductServlet">查询产品</a>
+                                <a href="SearchProductServlet.do">查询产品</a>
                             </div>
                             <div class="panel-body">
-                                <a href="AddProductServlet">新增产品</a>
+                                <a href="AddProductServlet.do">新增产品</a>
                             </div>
                         </div>
                     </div>

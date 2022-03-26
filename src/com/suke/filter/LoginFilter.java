@@ -6,7 +6,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebFilter("/*")
+@WebFilter("*.do")
 public class LoginFilter implements Filter {
 
     public LoginFilter() {}
@@ -22,10 +22,8 @@ public class LoginFilter implements Filter {
 		String ctxPath = request.getServletContext().getContextPath();
 		//获取请求的地址路径,如“/InfoManagerDemo/LoginServlet”
 		String url = req.getRequestURI();
-		//获取请求的对象,如“LoginServlet”
-        String subUrl = url.substring(ctxPath.length() + 1);
         //将请求LoginServlet和login.jsp不进行拦截过滤
-		if(subUrl.contains("LoginServlet") || subUrl.contains("login.jsp")) {
+		if(url.contains("LoginServlet")) {
 			chain.doFilter(request, response);
 		}
 		else {
@@ -33,7 +31,7 @@ public class LoginFilter implements Filter {
 			if(req.getSession().getAttribute("info") != null) {
 				chain.doFilter(request, response);
 			}else {
-				rep.sendRedirect("/jsp/login.jsp");
+				rep.sendRedirect(req.getContextPath());
 			}
 		}
 	}

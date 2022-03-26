@@ -17,7 +17,7 @@ import java.util.UUID;
 /*
  * 修改产品
  * */
-@WebServlet(name = "UpdateProductSubmitServlet", urlPatterns = "/UpdateProductSubmitServlet")
+@WebServlet(name = "UpdateProductSubmitServlet", urlPatterns = "/UpdateProductSubmitServlet.do")
 @MultipartConfig
 public class UpdateProductSubmitServlet extends HttpServlet {
 

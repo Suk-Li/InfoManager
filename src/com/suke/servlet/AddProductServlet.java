@@ -10,7 +10,7 @@ import java.io.IOException;
 /*
  * 新增产品
  * */
-@WebServlet(name = "AddProductServlet", urlPatterns = "/AddProductServlet")
+@WebServlet(name = "AddProductServlet", urlPatterns = "/AddProductServlet.do")
 public class AddProductServlet extends HttpServlet {
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

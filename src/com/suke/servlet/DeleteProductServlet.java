@@ -11,7 +11,7 @@ import java.io.IOException;
 /*
  * 删除产品
  * */
-@WebServlet(name = "DeleteProductServlet", urlPatterns = "/DeleteProductServlet")
+@WebServlet(name = "DeleteProductServlet", urlPatterns = "/DeleteProductServlet.do")
 public class DeleteProductServlet extends HttpServlet {
 
 	private ProductService productService = new ProductServiceImpl();

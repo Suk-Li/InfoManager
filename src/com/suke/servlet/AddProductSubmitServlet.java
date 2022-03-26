@@ -19,7 +19,7 @@ import java.util.UUID;
 /*
  * 新增产品
  * */
-@WebServlet(name = "AddProductSubmitServlet", urlPatterns = "/AddProductSubmitServlet")
+@WebServlet(name = "AddProductSubmitServlet", urlPatterns = "/AddProductSubmitServlet.do")
 @MultipartConfig
 public class AddProductSubmitServlet extends HttpServlet {
 

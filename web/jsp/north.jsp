@@ -8,7 +8,7 @@
         <div style="float: right; margin-top: 20px; text-align: center;">
             <font color="red"><%= session.getAttribute("info") %>
             </font>
-            <a href="LoginOutServlet">安全退出</a>
+            <a href="LoginOutServlet.do">安全退出</a>
         </div>
     </div>
 </div>

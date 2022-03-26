@@ -10,7 +10,7 @@ import java.io.IOException;
 /*
  * 用户退出
  * */
-@WebServlet(name = "LoginOutServlet", urlPatterns = "/LoginOutServlet")
+@WebServlet(name = "LoginOutServlet", urlPatterns = "/LoginOutServlet.do")
 public class LoginOutServlet extends HttpServlet {
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

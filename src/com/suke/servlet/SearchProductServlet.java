@@ -17,7 +17,7 @@ import java.util.ArrayList;
 /*
  * 查询产品
  * */
-@WebServlet(name = "SearchProductServlet", urlPatterns = "/SearchProductServlet")
+@WebServlet(name = "SearchProductServlet", urlPatterns = "/SearchProductServlet.do")
 public class SearchProductServlet extends HttpServlet {
 
     private ProductService productService = new ProductServiceImpl();

@@ -13,7 +13,7 @@ import java.io.IOException;
 /*
 * 账户登录
 * */
-@WebServlet(name = "LoginServlet", urlPatterns = "/LoginServlet")
+@WebServlet(name = "LoginServlet", urlPatterns = "/LoginServlet.do")
 public class LoginServlet extends HttpServlet {
 
     private UserService userService = new UserServiceImpl();

@@ -14,7 +14,7 @@ import java.io.IOException;
 /*
  * 修改产品
  * */
-@WebServlet(name = "UpdateProductServlet", urlPatterns = "/UpdateProductServlet")
+@WebServlet(name = "UpdateProductServlet", urlPatterns = "/UpdateProductServlet.do")
 public class UpdateProductServlet extends HttpServlet {
 
 	private ProductService productService = new ProductServiceImpl();

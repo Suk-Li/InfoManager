@@ -15,7 +15,7 @@
 </head>
 <body>
 <div class="container">
-    <form class="form-signin" action="${basePath}LoginServlet" method="post">
+    <form class="form-signin" action="${basePath}LoginServlet.do" method="post">
         <h2 class="form-signin-heading">请登录</h2>
         <label for="username" class="sr-only">用户名</label>
         <input type="text" id="username" name="userName" value="admin" class="form-control" placeholder="用户名" required
